@@ -4,8 +4,8 @@ selected_item=0
 menu_items=(
     "bash"
     "C/C++"
-    "TypeScript"
     "Erlang"
+    "TypeScript"
 )
 
 menu_size=${#menu_items[@]}
@@ -66,8 +66,8 @@ selection_menu() {
     case "$menu_result" in
     0) code ~/playground/bash-playground ;;
     1) code ~/playground/cpp-playground ;;
-    2) code ~/playground/ts-playground ;;
-    3) code ~/playground/erlang-playground ;;
+    2) code ~/playground/erlang-playground ;;
+    3) code ~/playground/ts-playground ;;
     esac
 }
 

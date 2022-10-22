@@ -2,13 +2,8 @@
 
 selected_item=0
 menu_items=(
-    "ssh lab"
-    "ssh gpu"
-    "code gpu ~/ksy"
-    "code gpu ~/ksy-fake_vs"
-    "code gpu ~/ksy-gramschmidt"
-    "code gpu ~/ksy-cuda-snippets"
-    "ssh inuiyeji"
+    "Bash Snippets"
+    "Rust Snippets"
 )
 
 menu_size=${#menu_items[@]}
@@ -67,13 +62,8 @@ selection_menu() {
     menu_result=$?
 
     case "$menu_result" in
-    0) ssh lab ;;
-    1) ssh gpu ;;
-    2) code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy ;;
-    3) code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-fake_vs ;;
-    4) code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-gramschmidt ;;
-    5) code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-cuda-snippets ;;
-    6) ssh swji.skku.edu -p 1398 -l 2016314695 ;;
+    0) code ~/snippet/bash-snippets ;;
+    1) code ~/snippet/rust-snippets ;;
     esac
 }
 
