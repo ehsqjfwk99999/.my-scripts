@@ -64,10 +64,10 @@ selection_menu() {
     menu_result=$?
 
     case "$menu_result" in
-    0) code ~/playground/bash-playground ;;
-    1) code ~/playground/cpp-playground ;;
-    2) code ~/playground/erlang-playground ;;
-    3) code ~/playground/ts-playground ;;
+    0) code ~/_playgrounds/bash-playground ;;
+    1) code ~/_playgrounds/cpp-playground ;;
+    2) code ~/_playgrounds/erlang-playground ;;
+    3) code ~/_playgrounds/ts-playground ;;
     esac
 }
 

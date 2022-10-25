@@ -62,8 +62,8 @@ selection_menu() {
     menu_result=$?
 
     case "$menu_result" in
-    0) code ~/snippet/bash-snippets ;;
-    1) code ~/snippet/rust-snippets ;;
+    0) code ~/_snippets/bash-snippets ;;
+    1) code ~/_snippets/rust-snippets ;;
     esac
 }
 
