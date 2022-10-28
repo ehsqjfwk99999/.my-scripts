@@ -11,6 +11,16 @@ menu_items=(
     "ssh inuiyeji"
 )
 
+connection_commands=(
+    'ssh lab'
+    'ssh gpu'
+    'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy'
+    'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-fake_vs'
+    'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-gramschmidt'
+    'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-cuda-snippets'
+    'ssh swji.skku.edu -p 1398 -l 2016314695'
+)
+
 menu_size=${#menu_items[@]}
 
 print_menu() {
@@ -66,15 +76,7 @@ selection_menu() {
     run_menu
     menu_result=$?
 
-    case "$menu_result" in
-    0) ssh lab ;;
-    1) ssh gpu ;;
-    2) code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy ;;
-    3) code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-fake_vs ;;
-    4) code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-gramschmidt ;;
-    5) code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-cuda-snippets ;;
-    6) ssh swji.skku.edu -p 1398 -l 2016314695 ;;
-    esac
+    eval ${connection_commands[$menu_result]}
 }
 
 selection_menu

@@ -2,8 +2,13 @@
 
 selected_item=0
 menu_items=(
-    "Bash Snippets"
-    "Rust Snippets"
+    "Bash"
+    "Rust"
+)
+
+snippets=(
+    bash-snippets
+    rust-snippets
 )
 
 menu_size=${#menu_items[@]}
@@ -61,10 +66,7 @@ selection_menu() {
     run_menu
     menu_result=$?
 
-    case "$menu_result" in
-    0) code ~/_snippets/bash-snippets ;;
-    1) code ~/_snippets/rust-snippets ;;
-    esac
+    code ~/_snippets/${snippets[$menu_result]}
 }
 
 selection_menu
