@@ -3,12 +3,16 @@
 selected_item=0
 menu_items=(
     "Bash"
+    "JS"
     "Rust"
+    "Solidity"
 )
 
 snippets=(
     bash-snippets
+    js-snippets
     rust-snippets
+    solidity-snippets
 )
 
 menu_size=${#menu_items[@]}
