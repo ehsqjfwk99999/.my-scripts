@@ -3,6 +3,7 @@
 selected_item=0
 menu_items=(
     "Bash"
+    "C"
     "JS"
     "Rust"
     "Solidity"
@@ -10,6 +11,7 @@ menu_items=(
 
 snippets=(
     bash-snippets
+    c-snippets
     js-snippets
     rust-snippets
     solidity-snippets
