@@ -6,6 +6,7 @@ menu_items=(
     "C/C++"
     "Erlang"
     "JS/TS"
+    "Rust"
 )
 
 playgrounds=(
@@ -13,6 +14,7 @@ playgrounds=(
     cpp-playground
     erlang-playground
     jsts-playground
+    rust-playground
 )
 
 menu_size=${#menu_items[@]}
