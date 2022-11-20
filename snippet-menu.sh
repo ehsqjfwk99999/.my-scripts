@@ -6,6 +6,7 @@ menu_items=(
     "C"
     "Go"
     "JS"
+    "Python"
     "Rust"
     "Solidity"
     "TypeScript"
@@ -16,6 +17,7 @@ snippets=(
     c-snippets
     golang-snippets
     js-snippets
+    python-snippets
     rust-snippets
     solidity-snippets
     typescript-snippets
