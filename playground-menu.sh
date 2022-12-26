@@ -5,6 +5,7 @@ menu_items=(
     "Bash"
     "C/C++"
     "Erlang"
+    "Go"
     "JS/TS"
     "Rust"
 )
@@ -13,6 +14,7 @@ playgrounds=(
     bash-playground
     cpp-playground
     erlang-playground
+    golang-playground
     jsts-playground
     rust-playground
 )
