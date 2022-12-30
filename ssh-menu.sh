@@ -9,9 +9,6 @@ menu_items=(
     "code gpu ~/ksy-gramschmidt"
     "code gpu ~/ksy-cuda-snippets"
     "ssh inuiyeji"
-    "code gpu ~/ksy-rkleene"
-    "code gpu ~/ksy-dl"
-    "code gpu ~/ksy-music"
 )
 
 connection_commands=(
@@ -22,9 +19,6 @@ connection_commands=(
     'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-gramschmidt'
     'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-cuda-snippets'
     'ssh swji.skku.edu -p 1398 -l 2016314695'
-    'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-rkleene'
-    'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-dl'
-    'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-music'
 )
 
 menu_size=${#menu_items[@]}
