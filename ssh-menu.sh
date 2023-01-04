@@ -4,6 +4,7 @@ selected_item=0
 menu_items=(
     "ssh lab"
     "ssh gpu"
+    "code gpu ~/ksy-xai"
     "code gpu ~/ksy"
     "code gpu ~/ksy-fake_vs"
     "code gpu ~/ksy-gramschmidt"
@@ -14,6 +15,7 @@ menu_items=(
 connection_commands=(
     'ssh lab'
     'ssh gpu'
+    'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-xai'
     'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy'
     'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-fake_vs'
     'code --folder-uri vscode-remote://ssh-remote+gpu/home/user01/ksy-gramschmidt'
